@@ -111,11 +111,17 @@ object TimeConversions {
 
   implicit class TimeConversions(val coefficient: Double) {
     def microseconds = Microseconds(coefficient)
+    def microsecond = Microseconds(coefficient)
     def milliseconds = Milliseconds(coefficient)
+    def millisecond = Milliseconds(coefficient)
     def seconds = Seconds(coefficient)
+    def second = Seconds(coefficient)
     def minutes = Minutes(coefficient)
+    def minute = Minutes(coefficient)
     def hours = Hours(coefficient)
+    def hour = Hours(coefficient)
     def days = Days(coefficient)
+    def day = Days(coefficient)
   }
 
   implicit class TimeStringConversions(s: String) {
